@@ -13,7 +13,7 @@ pipeline{
         sh 'echo "$output"'
       }
     }
-    stage("Deploy'){
+    stage('Deploy'){
           steps{
             sh 'echo "Deploy Stage"'
           }
