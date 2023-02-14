@@ -9,8 +9,7 @@ pipeline{
     }
     stage('Test'){
       steps{
-        sh 'g++ main.cpp -o main'
-        sh 'output=$(./example)'
+        sh 'output=$(make main)'
         sh 'echo "$output"'
       }
     }
