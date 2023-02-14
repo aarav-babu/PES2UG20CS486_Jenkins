@@ -4,6 +4,7 @@ pipeline{
     stage('Build'){
       steps{
         sh 'make -C main'
+        build job : 'pes2ug20cs486-1'
       }
     }
     stage('Test'){
